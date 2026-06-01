@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aura Buds Pro - Wireless Earbuds</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <a href="#" class="logo">Aura</a>
+        <div class="nav-right">
+          <a href="#" class="cart-btn" id="cartBtn">Cart <span id="cartCount">0</span></a>
+          <button class="menu-btn" id="menuBtn">☰</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="product">
+    <div class="container">
+      <div class="product-grid">
+        <div class="product-gallery">
+          <div class="main-image">
+            <img src="https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=800&q=80" alt="Aura Buds Pro" id="mainImg">
+          </div>
+          <div class="thumbnails">
+            <img src="https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=200&q=80" alt="White" class="thumb active" data-img="https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=800&q=80">
+            <img src="https://images.unsplash.com/photo-1572569511254-d8f925fe2cbb?w=200&q=80" alt="Black" class="thumb" data-img="https://images.unsplash.com/photo-1572569511254-d8f925fe2cbb?w=800&q=80">
+            <img src="https://images.unsplash.com/photo-1606220588913-b3aacb4d2f46?w=200&q=80" alt="Case" class="thumb" data-img="https://images.unsplash.com/photo-1606220588913-b3aacb4d2f46?w=800&q=80">
+          </div>
+        </div>
+
+        <div class="product-info">
+          <p class="badge">NEW RELEASE</p>
+          <h1>Aura Buds Pro</h1>
+          <div class="rating">
+            <span>★★★★★</span>
+            <p>4.8 (2,341 reviews)</p>
+          </div>
+          
+          <div class="price">
+            <span class="current">$129</span>
+            <span class="old">$179</span>
+            <span class="discount">28% OFF</span>
+          </div>
+
+          <p class="desc">
+            Studio-quality sound with active noise cancellation. 36-hour battery with charging case. Water resistant. Works with iOS & Android.
+          </p>
+
+          <div class="variants">
+            <p class="label">Color: <span id="colorName">Pearl White</span></p>
+            <div class="color-options">
+              <button class="color active" data-color="Pearl White" style="background: #f5f5f7;"></button>
+              <button class="color" data-color="Space Black" style="background: #1d1d1f;"></button>
+              <button class="color" data-color="Sage Green" style="background: #7c9885;"></button>
+            </div>
+          </div>
+
+          <div class="quantity">
+            <p class="label">Quantity</p>
+            <div class="qty-selector">
+              <button id="decrease">−</button>
+              <input type="number" id="qty" value="1" min="1" max="10" readonly>
+              <button id="increase">+</button>
+            </div>
+          </div>
+
+          <div class="actions">
+            <button class="btn btn-primary" id="addToCart">Add to Cart</button>
+            <button class="btn btn-secondary" id="buyNow">Buy Now</button>          </div>
+
+          <div class="features">
+            <div class="feature">
+              <span>🚚</span>
+              <p>Free shipping over $50</p>
+            </div>
+            <div class="feature">
+              <span>↩️</span>
+              <p>30-day returns</p>
+            </div>
+            <div class="feature">
+              <span>🛡️</span>
+              <p>2-year warranty</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+    <!-- Cart Sidebar -->
+  <div class="cart-sidebar" id="cartSidebar">
+    <div class="cart-header">
+      <h3>Your Cart</h3>
+      <button class="close-cart" id="closeCart">✕</button>
+    </div>
+    
+    <div class="cart-items" id="cartItems">
+      <div class="empty-cart">
+        <p>Your cart is empty</p>
+        <span>Add some products to get started</span>
+      </div>
+    </div>
+    
+    <div class="cart-footer" id="cartFooter" style="display: none;">
+      <div class="cart-total">
+        <span>Subtotal</span>
+        <span id="cartTotal">$0</span>
+      </div>
+      <button class="btn btn-primary btn-checkout">Checkout</button>
+      <p class="cart-note">Shipping & taxes calculated at checkout</p>
+    </div>
+  </div>
+  
+  <div class="cart-overlay" id="cartOverlay"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
